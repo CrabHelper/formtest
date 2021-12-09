@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    	div {
+            padding: 10px;
+            background-color: #f6f6f6;
+            overflow: hidden;
+        }
+    	input, select {
+            font: 17px Calibri;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button[type=submit]{
+            font: 17px Calibri;
+            width: auto;
+            float: right;
+            cursor: pointer;
+            padding: 7px;
+        }
+      h1, p {
+        text-align:center;
+      }
+    </style>
+</head>
+<body>
+  <h1>Teacher Suggestion Form</h1>
+  <p>This is not logged into anything related to PVI. All form information goes directly to the admin of GetAshley. The name and email fields are for convienience so there's less repeats and so the site admin can get in contact with the submitter. Thank you for playing GetAshley!</p>
+    <div>
+        
+        <!--Add few elements to the form-->
+      <form action="myform.php" method="post">
+        <div>
+            <input type="text" name="name" placeholder="Enter your name (optional)">
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="Enter your email (optional)">
+        </div>
+        <div>
+            <input type="text" name="list" placeholder="List teacher choice in ascending order (minimum 11, max 16)" style="height:100px">
+        </div>
+        <div>
+            <button type="submit" name="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
